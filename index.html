@@ -42,6 +42,10 @@ html,body{background:var(--bg);color:var(--ink);margin:0}
 .reveal .kill{color:var(--red)}
 .reveal .warn{color:var(--acc)}
 .reveal .tag{margin:2.2em 0 0;font-family:var(--mono);font-size:.5em;line-height:1.6;letter-spacing:.04em;color:var(--dim)}
+.reveal section.tight h2{margin-bottom:.3em}
+.reveal section.tight .big{font-size:1.55em;margin:.1em 0 .45em}
+.reveal section.tight ul{margin:.2em 0}
+.reveal section.tight li{margin:.18em 0}
 .reveal table{font-size:.7em;border-collapse:collapse;margin-top:.5em}
 .reveal table th,.reveal table td{border-bottom:1px solid var(--rule);padding:.35em .8em;text-align:left}
 .reveal table th{font-family:var(--mono);font-weight:600;color:var(--dim)}
@@ -213,7 +217,7 @@ allowed_domains = ["api.anthropic.com", "rubygems.org", "github.com:443"]
   <aside class="notes">They inherit, so you only write what differs. Commit them and every teammate's agent runs the same image, limits and policy. And hardened is built in: one flag for untrusted code, and a repo can't weaken it.</aside>
 </section>
 
-<section>
+<section class="tight">
   <h2>coipond</h2>
   <p class="big">A software factory.<br>Every node is its own coi machine.</p>
   <ul>
